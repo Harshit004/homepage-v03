@@ -99,7 +99,7 @@ export default function ResponsiveNavbar() {
           }}
         >
           <Image
-            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/977368c9-a2c2-4e3f-e7e8-109d41820600/public"
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/22912d3d-01f9-4c9d-e5c7-6ccd2d582600/public"
             alt="WAE Logo"
             fill
             className="object-contain"
