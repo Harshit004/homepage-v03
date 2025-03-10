@@ -2,6 +2,7 @@ import ResponsiveNavbar from "@/components/responsive-navbar"
 import VideoBackground from "@/components/video-background"
 import OurPurpose from "@/components/our-purpose"
 import ProductCard from "@/components/product-card"
+import {Footer2} from "@/components/footer2"
 export default function Home() {
   return (
     <main className="bg-white min-h-screen">
@@ -9,7 +10,7 @@ export default function Home() {
       <VideoBackground />
       <OurPurpose />
       {/* Products Section */}
-      <section className="w-[1200px] mx-auto section-margin-bottom">
+      <section className="w-[1200px] mx-auto mb-[9.72%]">
         {/* <h2 className="font-helvetica text-[86px] leading-[110%] tracking-[-4.26px] align-middle font-normal mb-[120px]">Products</h2> */}
         <div className="grid grid-cols-2 gap-x-[40px] gap-y-[80px]">
           <ProductCard
@@ -44,6 +45,8 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <Footer2 />
 
     </main>
   )
