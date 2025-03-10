@@ -31,11 +31,11 @@ export default function VideoBackground() {
         style={{
           left: "58.5%",  // ✅ Matches the logo's left position
           transform: "none",
-          top: "40px",    // ✅ Adjusted manually to align with the logo
+          top: "6.95%",    // ✅ Adjusted manually to align with the logo
         }}
       >
         <p className="font-sans font-normal text-[40px] md:text-[64px] xl:text-[86px] 
-                      leading-[100%] tracking-tight" style = {{marginRight: "8.34%"}}>
+                      leading-[100%] tracking-tight" style = {{marginRight: "8.34%", marginTop: "6.95%"}}>
           WE ARE DISRUPTING THE STATUS QUO
         </p>
       </div>
