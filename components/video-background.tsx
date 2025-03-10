@@ -31,7 +31,7 @@ export default function VideoBackground() {
         style={{
           left: "58.5%",  // ✅ Matches the logo's left position
           transform: "none",
-          top: "40px",    // ✅ Adjusted manually to align with the logo
+          top: "100px",    // ✅ Adjusted manually to align with the logo
         }}
       >
         <p className="font-sans font-normal text-[40px] md:text-[64px] xl:text-[86px] 
