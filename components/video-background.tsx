@@ -23,17 +23,31 @@ export default function VideoBackground() {
   }, [])
 
   // Align text with navbar logo
-  const getTextPosition = () => {
+  const getLogoPosition = () => {
     if (windowWidth >= 1440) {
-      return { left: 842 } // Match navbar logo left position
+      return { top: 30, left: 842, width: 110, height: 43 }
     } else if (windowWidth >= 768) {
-      return { left: "50%", transform: "translateX(-50%)" }
+      // For medium screens, center the logo
+      return {
+        top: 30,
+        left: "50%",
+        transform: "translateX(-50%)",
+        width: 110,
+        height: 43,
+      }
     } else {
-      return { left: "50%", transform: "translateX(-50%)" }
+      // Mobile layout
+      return {
+        top: 22,
+        left: "50%",
+        transform: "translateX(-50%)",
+        width: 90,
+        height: 35,
+      }
     }
   }
 
-  const textPos = getTextPosition()
+  const logoPos = getLogoPosition()
 
   return (
     <div className="w-full max-w-[1440px] mx-auto relative">
@@ -51,8 +65,8 @@ export default function VideoBackground() {
         style={{
           width: "478px",
           height: "380px",
-          left: typeof textPos.left === "string" ? textPos.left : `${textPos.left}px`,
-          transform: textPos.transform,
+          left: typeof logoPos.left === "string" ? logoPos.left : `${logoPos.left}px`,
+          transform: logoPos.transform,
           fontFamily: "Helvetica Neue",
           fontWeight: 400,
           fontSize: "86px",
