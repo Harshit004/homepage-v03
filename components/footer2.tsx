@@ -90,7 +90,7 @@ export const Footer2 = () => {
           <div className="max-xl:w-full xl:-mt-16">
             <Link href="/" className="mx-auto mb-8 block xl:mr-0">
               <img
-                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/93d4d7c4-0b19-4021-6a66-c8b3a2876f00/public"
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/22912d3d-01f9-4c9d-e5c7-6ccd2d582600/public"
                 alt="Wae"
                 width={120}
                 height={60}
