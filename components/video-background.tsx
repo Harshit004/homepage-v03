@@ -35,7 +35,7 @@ export default function VideoBackground() {
         }}
       >
         <p className="font-sans font-normal text-[40px] md:text-[64px] xl:text-[86px] 
-                      leading-[110%] tracking-tight">
+                      leading-[110%] tracking-tight" style = {{marginRight: "8.34%"}}>
           WE ARE DISRUPTING THE STATUS QUO
         </p>
       </div>
