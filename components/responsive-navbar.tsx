@@ -39,7 +39,7 @@ export default function ResponsiveNavbar() {
 
   const getLogoPosition = () => {
     if (windowWidth >= 1440) {
-      return { top: 30, left: 842, width: 110, height: 43 }
+      return { top: 30, left: "58.5%", width: 110, height: 43 }
     } else if (windowWidth >= 768) {
       // For medium screens, center the logo
       return {
@@ -85,13 +85,16 @@ export default function ResponsiveNavbar() {
 
         {/* Logo */}
         <div
+          id="navbar-logo" // ✅ Added ID for alignment
           className="absolute"
           style={{
             top: `${logoPos.top}px`,
-            left: typeof logoPos.left === "string" ? logoPos.left : `${logoPos.left}px`,
+            //left: typeof logoPos.left === "string" ? logoPos.left : `${logoPos.left}px`,
+            left: "58.5%",
             width: `${logoPos.width}px`,
             height: `${logoPos.height}px`,
-            transform: logoPos.transform,
+            //transform: logoPos.transform,
+            transform: "none",
             marginBottom: "17px",
           }}
         >
