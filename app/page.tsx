@@ -36,7 +36,7 @@ export default function Home() {
       <VideoBackground />
       <OurPurpose />
       {/* Products Section */}
-      <section className="w-[1200px] mx-auto mb-[9.72%]">
+      <section className="w-[1440px] mx-0 mb-[9.72%] px-[30px]">
         {/* <h2 className="font-helvetica text-[86px] leading-[110%] tracking-[-4.26px] align-middle font-normal mb-[120px]">Products</h2> */}
         <div className="grid grid-cols-2 gap-x-[40px] gap-y-[80px]">
           <ProductCard
@@ -137,11 +137,11 @@ export default function Home() {
             >
               KNOW MORE
               <img
-                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cb01eed2-61d9-45f4-ceb4-4af758b19400/public"
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c424b7fd-5c2d-49b5-ca8d-df4e8bc5f100/public"
                 className="h-4 w ml-[20px] group-hover:hidden"
               />
               <img
-                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/290b69e5-2c44-49a3-2f4e-3553ec14e700/public"
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4c9c84df-2bee-4474-903d-f4abc94b1900/public"
                 className="h-4 w ml-[20px] hidden group-hover:block"
               />
             </Link>

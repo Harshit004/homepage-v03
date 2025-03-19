@@ -108,7 +108,7 @@ export default function ResponsiveNavbar() {
                 className={`absolute w-[46px] h-[2px] transition-all duration-700 ${
                   isOpen
                     ? "top-[5px] rotate-[35deg] bg-white"
-                    : "top-0 rotate-0 bg-black"
+                    : "top-0 rotate-0 bg-[#003F5F]"
                 }`}
               ></span>
               {/* Second line */}
@@ -116,7 +116,7 @@ export default function ResponsiveNavbar() {
                 className={`absolute w-[46px] h-[2px] transition-all duration-700 ${
                   isOpen
                     ? "top-[5px] -rotate-[35deg] bg-white"
-                    : "top-[10px] rotate-0 bg-black"
+                    : "top-[10px] rotate-0 bg-[#003F5F]"
                 }`}
               ></span>
             </div>

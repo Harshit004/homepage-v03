@@ -13,7 +13,7 @@ export default function ProductCard({ image, title, description }: ProductCardPr
   return (
     <div className="group">
       <Link href={`/products/${title.toLowerCase().replace(/\s+/g, "-")}`} className="block">
-        <div className="relative w-[580px] h-[360px] mb-[19px] overflow-hidden">
+        <div className="relative w-[670px] h-[575px] mb-[19px] overflow-hidden">
           <Image
             src={image || "/placeholder.svg"}
             alt={title}
