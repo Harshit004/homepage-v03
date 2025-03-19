@@ -45,20 +45,20 @@ export default function ResponsiveNavbar() {
 
   const getLogoPosition = useCallback(() => {
     if (windowWidth >= 1440) {
-      return { top: 30, left: 842, width: 110, height: 43 }
+      return { top: 30, left: "58.5%", width: 110, height: 43 }
     } else if (windowWidth >= 768) {
       return {
         top: 30,
-        left: "50%",
-        transform: "translateX(-50%)",
+        left: "58.5%%",
+        transform: "none",
         width: 110,
         height: 43,
       }
     } else {
       return {
         top: 22,
-        left: "50%",
-        transform: "translateX(-50%)",
+        left: "58.5%",
+        transform: "none",
         width: 90,
         height: 35,
       }
