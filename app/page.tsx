@@ -141,7 +141,7 @@ export default function Home() {
                 className="h-4 w ml-[20px] group-hover:hidden"
               />
               <img
-                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9bbddd0d-6a5d-4c5c-8f33-3d5716dda400/public"
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/290b69e5-2c44-49a3-2f4e-3553ec14e700/public"
                 className="h-4 w ml-[20px] hidden group-hover:block"
               />
             </Link>
