@@ -138,7 +138,7 @@ export default function ResponsiveNavbar() {
           <div className="relative w-full h-full">
             {/* Closed state logo */}
             <Image
-              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/df470715-8b49-4d9d-b83b-7249a328b100/public"
+              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/944085bf-f5d2-4352-d5c2-96d5198ae700/public"
               alt="Company Logo Closed"
               fill
               className={`object-contain transition-opacity duration-700 ${isOpen ? "opacity-0" : "opacity-100"}`}
