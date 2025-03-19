@@ -8,7 +8,7 @@ interface ProductCardProps {
   hoverImage: string
   title: string
   description: string
-  enableHover?: boolean  // ← optional, defaults to true
+  enableHover?: boolean  // defaults to true
 }
 
 export default function ProductCard({
@@ -18,46 +18,29 @@ export default function ProductCard({
   description,
   enableHover = true,
 }: ProductCardProps) {
-  // Conditionally apply classes depending on `enableHover`
   const defaultImageClasses = enableHover
-    ? `object-cover
-       transition-transform
-       duration-0
-       group-hover:scale-105
-       group-hover:hidden
-       transition-opacity
-       duration-1000
-       ease-in-out
-       opacity-100
-       group-hover:opacity-100`
-    : "object-cover"
+    ? "object-cover transition-transform duration-0 group-hover:scale-105 group-hover:hidden transition-opacity duration-1000 ease-in-out opacity-100 group-hover:opacity-100"
+    : "object-cover transition-transform duration-0 group-hover:scale-105"
 
   const hoverImageClasses = enableHover
-    ? `object-cover
-       transition-opacity
-       duration-0
-       ease-in-out
-       opacity-0
-       group-hover:opacity-100`
-    : // If hover is disabled, hide this image by default
-      "object-cover hidden"
+    ? "object-cover transition-opacity duration-0 ease-in-out opacity-0 group-hover:opacity-100"
+    : "object-cover hidden"
 
   return (
-    // Only apply `group` class if hover is enabled
-    <div className={enableHover ? "group" : ""}>
+    <div className="group">
       <Link
         href={`/products/${title.toLowerCase().replace(/\s+/g, "-")}`}
         className="block"
       >
         <div className="relative w-[670px] h-[500px] mb-[19px] overflow-hidden">
-          {/* Default image */}
+          {/* Default Image */}
           <Image
             src={image || "/placeholder.svg"}
             alt={title}
             fill
             className={defaultImageClasses}
           />
-          {/* Hover image */}
+          {/* Hover Image */}
           <Image
             src={hoverImage || "/placeholder.svg"}
             alt={`${title} - Hover`}
@@ -70,9 +53,7 @@ export default function ProductCard({
         </h3>
       </Link>
       <div className="w-[450px] h-[32px]">
-        <p className="text-[16px] text-[#6A6A6A]">
-          {description}
-        </p>
+        <p className="text-[16px] text-[#6A6A6A]">{description}</p>
       </div>
     </div>
   )
