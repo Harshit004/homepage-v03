@@ -22,20 +22,20 @@ export default function ProductCard({
   const defaultImageClasses = enableHover
     ? `object-cover
        transition-transform
-       duration-300
+       duration-0
        group-hover:scale-105
        group-hover:hidden
        transition-opacity
        duration-1000
        ease-in-out
        opacity-100
-       group-hover:opacity-0`
+       group-hover:opacity-100`
     : "object-cover"
 
   const hoverImageClasses = enableHover
     ? `object-cover
        transition-opacity
-       duration-300
+       duration-0
        ease-in-out
        opacity-0
        group-hover:opacity-100`
