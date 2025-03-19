@@ -22,7 +22,7 @@ export default function ProductCard({
         href={`/products/${title.toLowerCase().replace(/\s+/g, "-")}`}
         className="block"
       >
-        <div className="relative w-[670px] h-[575px] mb-[19px] overflow-hidden">
+        <div className="relative w-[670px] h-[500px] mb-[19px] overflow-hidden">
           {/* Default image (visible by default) */}
           <Image
             src={image || "/placeholder.svg"}
