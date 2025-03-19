@@ -42,36 +42,42 @@ export default function Home() {
             hoverImage="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c8b7a637-07bf-4dd9-7fe0-cf9118816c00/public"
             title="DRINKING WATER STATIONS"
             description="Water dispensers with inbuilt purification —pure, safe water delivered efficiently."
+            enableHover={true}
           />
           <ProductCard
             image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/80a500cb-eea1-4332-f93b-478cdda6e500/public"
             hoverImage="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/80a500cb-eea1-4332-f93b-478cdda6e500/public"
             title="DRINKING WATER DISPENSER"
             description="Stainless steel water dispensers give you fresh, clean water anytime."
+            enableHover={false} 
           />
           <ProductCard
             image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/67afa77d-f854-48d9-7c15-9546a1929800/public"
             hoverImage="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/67afa77d-f854-48d9-7c15-9546a1929800/public"
             title="DRINKING WATER FAUCETS"
             description="Drinking water faucets with under the counter storage units to make access to fresh water simple."
+            enableHover={false} 
           />
           <ProductCard
             image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4c5a7f4d-3cdb-4170-1ecc-1fd159646100/public"
             hoverImage="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4c5a7f4d-3cdb-4170-1ecc-1fd159646100/public"
             title="WATER COOLERS & FOUNTAINS"
             description="Water coolers cum bubblers provide chilled water on demand."
+            enableHover={false} 
           />
           <ProductCard
             image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d19a437a-cf36-4df0-b472-dfc7451a6a00/public"
             hoverImage="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d19a437a-cf36-4df0-b472-dfc7451a6a00/public"
             title="PUBLIC UTILITY SYSTEMS"
             description="Designed for large public spaces, PUS systems ensure clean, accessible water."
+            enableHover={false} 
           />
           <ProductCard
             image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3d8ab49e-7fa8-4423-edff-6c1b8cfd9000/public"
             hoverImage="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3d8ab49e-7fa8-4423-edff-6c1b8cfd9000/public"
             title="COMMERCIAL/INDUSTRIAL PLANTS"
             description="Power your facility with our large-scale hydration plants. Scalable and efficient."
+            enableHover={false} 
           />
         </div>
       </section>

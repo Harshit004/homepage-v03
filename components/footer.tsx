@@ -31,6 +31,21 @@ export default function Footer() {
           </div>
 
           <div className="flex">
+          <div
+  className="max-w-[150px] max-h-[40px] py-[7px] pr-[12px]"
+  style={{
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontSize: "16px",
+    lineHeight: "20px",
+    letterSpacing: "0px",
+    textAlign: "right",
+    verticalAlign: "middle",
+  }}
+>
+  Sign up for the newsletter
+</div>
+
             <input
               type="email"
               placeholder="Enter email address"
