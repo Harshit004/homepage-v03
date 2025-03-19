@@ -89,19 +89,19 @@ export default function Home() {
               <h3 className="font-helvetica text-[72px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-fit text-white text-center mb-[20px]">
                 <CountUp start={0} end={startCount ? 1012120.25 : 0} duration={3} separator="," decimal="." decimals={2}/>
               </h3>
-              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit text-gray-400 text-center">TONNES CO2 EMISSIONS SAVED</p>
+              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit self-start text-gray-400 text-left">TONNES CO2 EMISSIONS SAVED</p>
             </div>
             <div className="flex flex-col items-center">
               <h3 className="font-helvetica text-[72px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-fit text-white text-center mb-[20px]">
                 <CountUp start={0} end={startCount ? 12185.43 : 0} duration={3} separator="," decimal="." decimals={2}/>
               </h3>
-              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit text-gray-400 text-center">MILLION GALLONS WATER SAVED</p>
+              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit self-start text-gray-400 text-left">MILLION GALLONS WATER SAVED</p>
             </div>
             <div className="flex flex-col items-center">
               <h3 className="font-helvetica text-[72px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-fit text-white text-center mb-[20px]">
                <CountUp start={0} end={startCount ? 22253.65 : 0} duration={3} separator="," decimal="." decimals={2}/>
               </h3>
-              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit text-gray-400 text-center">TONNES PLASTIC REMOVED</p>
+              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit self-start text-gray-400 text-left">TONNES PLASTIC REMOVED</p>
             </div>
           </div>
         </div>

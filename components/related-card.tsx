@@ -13,7 +13,7 @@ export default function RelatedCard({ image, title, description, width, height }
   return (
     <Link 
       href="#" 
-      className="group block transition-all duration-300 rounded-lg border border-transparent hover:border-white/20 hover:bg-white/10 hover:backdrop-blur-md hover:shadow-xl"
+      className="group block transition-all duration-300 rounded-lg border border-transparent hover:border-white/20 hover:bg-white/10"
     >
       <div className="mb-4 overflow-hidden">
         <Image
@@ -25,8 +25,8 @@ export default function RelatedCard({ image, title, description, width, height }
         />
       </div>
       {/* Wrap text elements in a container that receives extra padding on hover */}
-      <div className="transition-all duration-300 group-hover:px-4 group-hover:py-2">
-        <h3 className="text-base font-medium mb-1 group-hover:underline">{title}</h3>
+      <div className="transition-all duration-300">
+        <h3 className="text-base font-medium mb-1">{title}</h3>
         <p className="text-sm text-gray-600">{description}</p>
       </div>
     </Link>
