@@ -38,8 +38,8 @@ export default function Home() {
       <section className="w-[1440px] mx-0 mb-[9.72%] px-[30px]">
         <div className="grid grid-cols-2 gap-x-[40px] gap-y-[80px]">
           <ProductCard
-            image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/99529960-1c92-49ab-0b46-8d4b42aaf400/public"
-            hoverImage="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c8b7a637-07bf-4dd9-7fe0-cf9118816c00/public"
+            image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/fb52ab58-4443-41c6-5768-88a74b90a800/public"
+            hoverImage="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/55178315-9b4f-4204-32f5-9f86818df800/public"
             title="DRINKING WATER STATIONS"
             description="Water dispensers with inbuilt purification —pure, safe water delivered efficiently."
             enableHover={true}
