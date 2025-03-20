@@ -108,7 +108,7 @@ export default function Home() {
                   decimals={2}
                 />
               </h3>
-              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit self-start text-gray-400 text-left">
+              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit text-white">
                 TONNES CO2 EMISSIONS SAVED
               </p>
             </div>
@@ -123,7 +123,7 @@ export default function Home() {
                   decimals={2}
                 />
               </h3>
-              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit self-start text-gray-400 text-left">
+              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit text-white">
                 MILLION GALLONS WATER SAVED
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function Home() {
                   decimals={2}
                 />
               </h3>
-              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit self-start text-gray-400 text-left">
+              <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-fit text-white">
                 TONNES PLASTIC REMOVED
               </p>
             </div>

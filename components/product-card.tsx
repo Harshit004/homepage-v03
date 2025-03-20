@@ -19,11 +19,11 @@ export default function ProductCard({
   enableHover = true,
 }: ProductCardProps) {
   const defaultImageClasses = enableHover
-    ? "object-cover transition-transform duration-0 group-hover:scale-105 group-hover:hidden transition-opacity duration-1000 ease-in-out opacity-100 group-hover:opacity-100"
-    : "object-cover transition-transform duration-0 group-hover:scale-105"
+    ? "object-cover transition-transform duration-500 ease-in-out transition-opacity duration-1500 ease-in-out delay-1000 group-hover:opacity-100"
+    : "object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
 
   const hoverImageClasses = enableHover
-    ? "object-cover transition-opacity duration-0 ease-in-out opacity-0 group-hover:opacity-100"
+    ? "object-cover transition-opacity duration-1500 ease-in-out opacity-0 group-hover:opacity-100"
     : "object-cover hidden"
 
   return (
