@@ -19,11 +19,11 @@ export default function ProductCard({
   enableHover = true,
 }: ProductCardProps) {
   const defaultImageClasses = enableHover
-    ? "object-cover transition-transform duration-500 ease-in-out transition-opacity duration-1500 ease-in-out delay-1000 group-hover:opacity-100"
+    ? "object-cover transition-opacity ease-in-out opacity-100 group-hover:opacity-0 z-10"
     : "object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
 
   const hoverImageClasses = enableHover
-    ? "object-cover transition-opacity duration-1500 ease-in-out opacity-0 group-hover:opacity-100"
+    ? "object-cover transition-opacity ease-in-out opacity-0 group-hover:opacity-100 z-20"
     : "object-cover hidden"
 
   return (
@@ -39,6 +39,7 @@ export default function ProductCard({
             alt={title}
             fill
             className={defaultImageClasses}
+            style={{ transitionDuration: "1250ms" }}
           />
           {/* Hover Image */}
           <Image
@@ -46,6 +47,7 @@ export default function ProductCard({
             alt={`${title} - Hover`}
             fill
             className={hoverImageClasses}
+            style={{ transitionDuration: "1250ms" }}
           />
         </div>
         <h3 className="text-[16px] font-normal uppercase mb-[8px]">
