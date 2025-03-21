@@ -1,5 +1,6 @@
 "use client"
 
+import Navbar from "@/components/navbar"
 import ResponsiveNavbar from "@/components/responsive-navbar"
 import VideoBackground from "@/components/video-background"
 import OurPurpose from "@/components/our-purpose"
@@ -30,7 +31,7 @@ export default function Home() {
 
   return (
     <main className="bg-white min-h-screen">
-      <ResponsiveNavbar />
+      <Navbar />
       <VideoBackground />
       <OurPurpose />
 
