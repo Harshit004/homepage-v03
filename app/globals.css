@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-
     --font-inter: var(--font-inter, sans-serif);
 
     --background: 0 0% 100%;
@@ -68,6 +67,7 @@
     --ring: 212.7 26.8% 83.9%;
   }
 }
+
 @font-face {
   font-family: "Helvetica Neue";
   src: url("/fonts/HelveticaNeue-Light.woff2") format("woff2");
@@ -132,33 +132,45 @@
 
 /* Responsive adjustments */
 @media (max-width: 1440px) {
+  /* Instead of forcing fixed padding or heights, keep it minimal */
   .navbar-container {
-    padding: 0 20px;
+    /* You can use a relative approach if needed:
+       padding: 0 2rem; 
+       or remove if you rely on Tailwind's px- classes */
   }
 
   .menu-button {
-    left: 5%;
+    left: 5%; /* keep or adjust if needed */
   }
 
   .logo-container {
     left: 50%;
     transform: translateX(-50%);
+    /* removing forced widths or heights 
+       ensures the logo scales with zoom */
   }
 }
 
 @media (max-width: 768px) {
+  /* Avoid forcing heights or top offsets 
+     so it doesn't break at different zoom levels */
   .navbar-container {
-    height: 80px;
+    /* e.g. min-height: 80px; or no forced height */
   }
 
   .menu-button {
-    top: 31px;
+    top: 31px; /* keep or adjust if needed */
   }
 
   .logo-container {
-    width: 90px;
-    height: 35px;
+    /* 
+       Removing forced width/height or using 
+       max-width helps it remain flexible. 
+    */
+    width: auto; 
+    height: auto; 
     top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
-

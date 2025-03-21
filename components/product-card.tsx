@@ -18,6 +18,7 @@ export default function ProductCard({
   description,
   enableHover = true,
 }: ProductCardProps) {
+  // Classes for default vs. hover images
   const defaultImageClasses = enableHover
     ? "object-cover transition-opacity ease-in-out opacity-100 group-hover:opacity-0 z-10"
     : "object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
@@ -32,7 +33,14 @@ export default function ProductCard({
         href={`/products/${title.toLowerCase().replace(/\s+/g, "-")}`}
         className="block"
       >
-        <div className="relative w-[670px] h-[500px] mb-[19px] overflow-hidden">
+        {/* 
+          Responsive container with aspect ratio 670:500 
+          Ensures consistent scaling at different zoom levels 
+        */}
+        <div 
+          className="relative max-w-[670px] w-full mb-[19px] overflow-hidden" 
+          style={{ aspectRatio: "670 / 500" }}
+        >
           {/* Default Image */}
           <Image
             src={image || "/placeholder.svg"}
@@ -50,12 +58,17 @@ export default function ProductCard({
             style={{ transitionDuration: "1250ms" }}
           />
         </div>
+
         <h3 className="text-[16px] font-normal uppercase mb-[8px]">
           {title}
         </h3>
       </Link>
-      <div className="w-[450px] h-[32px]">
-        <p className="text-[16px] text-[#6A6A6A]">{description}</p>
+
+      {/* Flexible text container without forced height */}
+      <div className="max-w-[450px]">
+        <p className="text-[16px] text-[#6A6A6A]">
+          {description}
+        </p>
       </div>
     </div>
   )
