@@ -14,7 +14,7 @@ export default function VideoBackground() {
   }, [])
 
   return (
-    <div className="relative w-full max-w-[1440px] mx-auto pt-[90px] md:pt-[90px] sm:pt-[80px]">
+    <div className="relative w-full max-w-[1440px] mx-auto">
       {/* Video Background */}
       <video
         ref={videoRef}
@@ -61,7 +61,7 @@ export default function VideoBackground() {
           "
           style={{
             marginRight: "8.34%",
-            marginTop: "25.95%",
+            marginTop: "8.95%",
           }}
         >
           WE ARE DISRUPTING THE STATUS QUO
